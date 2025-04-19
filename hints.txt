@@ -1,0 +1,55 @@
+#4169E1 is Royal Blue, a bold, rich shade — works great in both dark and light themes. 
+
+Matching Color Combos
+
+1. Light Theme Combo (Clean & Professional)
+
+| Purpose        | Color        | Hex Code     |
+|----------------|--------------|--------------|
+| **Primary**    | Royal Blue   | `#4169E1`     |
+| Background     | Soft White   | `#F9F9F9`     |
+| Text (dark)    | Deep Gray    | `#1E1E1E`     |
+| Accent         | Sky Blue     | `#87CEFA`     |
+| Highlight      | Soft Orange  | `#FFA500`     |
+
+> ✦ Great for portfolios aiming for a **fresh and modern** look.
+
+---
+
+#### ✅ **2. Dark Theme Combo (Sleek & Techy)**
+
+| Purpose        | Color        | Hex Code     |
+|----------------|--------------|--------------|
+| **Primary**    | Royal Blue   | `#4169E1`     |
+| Background     | Dark Navy    | `#0D1117`     |
+| Text           | Light Gray   | `#EAEAEA`     |
+| Accent         | Cyan         | `#00FFFF`     |
+| Secondary Btn  | Slate Blue   | `#6A5ACD`     |
+
+> ✦ Feels very **developer-focused** — perfect for showcasing frontend/dev skills.
+
+---
+
+#### ✅ **3. Vibrant & Creative (Bold Look)**
+
+| Purpose        | Color        | Hex Code     |
+|----------------|--------------|--------------|
+| **Primary**    | Royal Blue   | `#4169E1`     |
+| Background     | Light Lilac  | `#EAE6F8`     |
+| Text           | Charcoal     | `#2C2C2C`     |
+| Accent         | Coral Pink   | `#FF6B6B`     |
+| Button Hover   | Gold         | `#FFD700`     |
+
+> ✦ Ideal if you want a **fun, bold vibe** — especially with interactive projects.
+
+---
+
+### 💡 Bonus Tip: Gradient Ideas
+
+- `linear-gradient(135deg, #4169E1, #6A5ACD)`
+- `linear-gradient(90deg, #4169E1, #00BFFF)`
+- `linear-gradient(120deg, #4169E1, #8A2BE2)`
+
+---
+
+Want me to generate a CSS color palette or apply these to a layout?
