@@ -42,7 +42,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .menu-container { display: none; }
 
 @media(max-width: 600px){
-    .header, .about { padding: 1rem 2rem; }
+    .header{ padding: 1rem 2rem; }
 
     .menu-container {
         display: block;
@@ -157,7 +157,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 }
 
 @media(max-width:992px){
-    .about { margin: 0; }
+    .about { 
+        margin: 0 3rem; 
+        text-align: justify;
+    }
 
     .about-details { flex-direction: column; }
 
@@ -265,12 +268,20 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 @media screen and (max-width: 600px) {
     .all-projects { grid-template-columns: 1fr; }
 }
-  
+
 
 /* skills */
+.skillsets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+    gap: 2rem;
+    padding: 1rem;
+    margin: 1rem 2.1rem;
+}
+
 .skills { padding-top: 60px; } /*Creates space at the top of the hero section to account for the fixed header*/
 
-.skillsets {
+/* .skillsets {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -284,7 +295,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     display: flex;
     gap: 1.5rem;
     min-width: 250px;
-}
+} */
 
 .skillset {
     padding: 1rem;
@@ -331,10 +342,16 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     transition: width 0.6s ease-in-out;
 }
 
-@media(max-width:805px){
-    .skillsets { margin: 1rem; }
 
-    .skillsets-column { flex-direction: column; }
+@media(max-width: 992px){
+    .skillsets { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 805px) {
+    .skillsets {
+        grid-template-columns: 1fr; /* Stack on small screens */
+        margin: 1rem;
+    }
 }
 
 /* testimonials */

@@ -45,43 +45,22 @@ function Skills() {
     <section id='skills' className='skills'>
         <h2 className='heading-text'>My <span>Skills</span></h2>
         <main className='skillsets'>
-            {/* we show the first 3 sets of skills */}
-            <div className='skillsets-column'>
-                {skillSets.slice(0,3).map((skillSets, index)=>(
-                    <div key={index} className='skillset'>
-                        <div className='skill-name-icon-level'>
-                            <p className='skill-name-icon'>
-                                <span>{skillSets.skillName}</span>
-                                <span>{skillSets.skillIcon}</span>
-                            </p>
-                            <p>{skillSets.skillLevel}%</p>
-                        </div>
-                        <p className='skill-text'>{skillSets.skillText}</p>
-                        <div className='skill-progress'>
-                            <div className='skill-progressbar' style={{width: `${skillSets.skillLevel}%`}}></div>
-                        </div>
-                    </div>
-                ))}
+    {skillSets.map((skill, index) => (
+        <div key={index} className='skillset'>
+            <div className='skill-name-icon-level'>
+                <p className='skill-name-icon'>
+                    <span>{skill.skillName}</span>
+                    <span>{skill.skillIcon}</span>
+                </p>
+                <p>{skill.skillLevel}%</p>
             </div>
-            {/* we show the last 3 sets */}
-            <div className='skillsets-column'>
-                {skillSets.slice(3,6).map((skillSets, index)=>(
-                    <div key={index} className='skillset'>
-                        <div className='skill-name-icon-level'>
-                            <p className='skill-name-icon'>
-                                <span>{skillSets.skillName}</span>
-                                <span>{skillSets.skillIcon}</span>
-                            </p>
-                            <p className='skill-text'>{skillSets.skillLevel}%</p>
-                        </div>
-                        <p>{skillSets.skillText}</p>
-                        <div className='skill-progress'>
-                            <div className='skill-progressbar' style={{width: `${skillSets.skillLevel}%`}}></div>
-                        </div>
-                    </div>
-                ))}
+            <p className='skill-text'>{skill.skillText}</p>
+            <div className='skill-progress'>
+                <div className='skill-progressbar' style={{ width: `${skill.skillLevel}%` }}></div>
             </div>
-        </main>
+        </div>
+    ))}
+</main>
     </section>
   )
 }

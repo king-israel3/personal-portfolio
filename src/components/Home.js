@@ -4,7 +4,7 @@ import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
 import Skills from './Skills'
-import Testimonials from './Testimonials'
+// import Testimonials from './Testimonials'
 import Footer from './Footer'
 
 function Home(){
@@ -14,7 +14,7 @@ function Home(){
             <About/>
             <Projects/>
             <Skills/>
-            <Testimonials/>
+            {/* <Testimonials/> */}
             <Footer/>
         </section>
     )
