@@ -53,9 +53,9 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     }
     
     .nav-links {
-        display: none; /* Hide by default on small screens */
+        display: none;
         position: absolute;
-        top: 40px; /* make sure this matches your header height */
+        top: 40px;
         left: 0; right: 0; bottom: 0;
         transform: translateY(-100%);
         z-index: 1000;
@@ -71,8 +71,8 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
         background: #4169E1;
         display: flex;
         flex-direction: column;
-        align-items: center; /*left & right*/
-        justify-content: center; /*top & bottom*/
+        align-items: center;
+        justify-content: center;
         gap: 1.5rem;
         height: 100vh;
     }
@@ -101,9 +101,9 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .intro {
     color: #eaeaea;
     position: absolute;
-    background: rgba(255, 255, 255, 0.1); /* light transparent layer */
-    backdrop-filter: blur(10px); /* magic happens here */
-    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 12px;
     z-index: 2;
@@ -128,12 +128,12 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 @media(max-width:900px){
     .intro { 
-        top: 50%; /* Keep vertical centering */
-        left: 0; right: 0; /*stretches horizontally within the container*/
-        transform: translateY(-50%); /* shifts it up by half its height to center vertically */
-        margin-left: 3rem; /* Same as header padding-left */
-        margin-right: 3rem; /* Same as header padding-right */
-        width: calc(100% - 6rem); /* Full width minus margins(left & right) */
+        top: 50%;
+        left: 0; right: 0;
+        transform: translateY(-50%);
+        margin-left: 3rem;
+        margin-right: 3rem;
+        width: calc(100% - 6rem);
         max-width: none;
     }
 }
@@ -151,6 +151,43 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     margin-right: 10px;
 }
 
+.image-wrapper {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+  
+.about-img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    /* max-width: 300px; */
+}
+  
+.shape {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+  
+.shape-blue {
+    width: 200px;
+    height: 200px;
+    background-color: #4169e1;
+    top: 0;
+    left: -30px;
+}
+  
+.shape-red {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    bottom: -20px;
+    right: -20px;
+}
+  
+
 .about-details-text > p { 
     margin: 1rem 0; 
     text-align: justify; 
@@ -158,13 +195,15 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 @media(max-width:992px){
     .about { 
-        margin: 0 3rem; 
+        margin: 0 2rem; 
         text-align: justify;
     }
 
     .about-details { flex-direction: column; }
 
     .about-details > div { width: 100%; }
+
+    .about-details-imgBx { margin: 1em 0; }
 }
 
 /* my works */
@@ -229,13 +268,13 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 @media screen and (max-width: 800px) {
     .all-projects {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /*4 items per column*/
+      grid-template-columns: repeat(2, 1fr);
       gap: 0 1rem;
     }
   
     .all-projects-column {
-      all: unset; /* Remove flex-related styles */
-      display: contents; /* Allow children to participate in the grid directly */
+      all: unset;
+      display: contents;
     }
   
     .all-projects-column-img-text {
@@ -247,8 +286,8 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .desktop-view-absolute-wrapper {
       position: relative;
-      height: 300px; /* or whatever height works for your layout */
-      background: #ccc; /* matches your card background */
+      height: 300px;
+      background: #ccc;
     }
   
     .desktop-view-projects {
@@ -273,29 +312,13 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 /* skills */
 .skillsets {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 1rem;
     margin: 1rem 2.1rem;
 }
 
-.skills { padding-top: 60px; } /*Creates space at the top of the hero section to account for the fixed header*/
-
-/* .skillsets {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin: 1rem 2.1rem;
-}
-
-.skillsets-column {
-    display: flex;
-    gap: 1.5rem;
-    min-width: 250px;
-} */
+.skills { padding-top: 60px; }
 
 .skillset {
     padding: 1rem;
@@ -349,7 +372,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 @media(max-width: 805px) {
     .skillsets {
-        grid-template-columns: 1fr; /* Stack on small screens */
+        grid-template-columns: 1fr;
         margin: 1rem;
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import me from '../assets/me.png'
 
 function About() {
   return (
@@ -6,7 +7,11 @@ function About() {
       <h2 className='heading-text'>About <span>Me</span></h2>
       <main className='about-details'>
         <div className='about-details-imgBx'>
-            {/* <img src={} alt=""/> */}
+          <div className="image-wrapper">
+            <div className="shape shape-blue"></div>
+            <div className="shape shape-red"></div>
+            <img src={me} alt="About Me" className="about-img" />
+          </div>
         </div>
         <div className='about-details-text'>
             <p>I'm a self-taught web developer from Nigeria with a strong focus on frontend development. I enjoy turning ideas into clean, responsive interfaces using HTML, CSS, and JavaScript.</p>
