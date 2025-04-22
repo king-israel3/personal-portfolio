@@ -195,7 +195,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 @media(max-width:992px){
     .about { 
-        margin: 0 2rem; 
+        margin: 0 3rem; 
         text-align: justify;
     }
 
@@ -208,7 +208,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* my works */
 .projects { 
-    margin: 1rem 2.1rem; 
+    margin: 1rem 2.1rem;
     padding-top: 60px;
 }
 
@@ -263,6 +263,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .all-projects-column-caption > p > a {
     color: #f1f1f1;
     text-decoration: none;
+}
+
+@media(max-width:992px){
+    .projects { margin: 1rem 3rem; }
 }
 
 @media screen and (max-width: 800px) {
@@ -367,13 +371,16 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 
 @media(max-width: 992px){
-    .skillsets { grid-template-columns: repeat(2, 1fr); }
+    .skillsets { 
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 1rem 3rem;
+    }
 }
 
 @media(max-width: 805px) {
     .skillsets {
         grid-template-columns: 1fr;
-        margin: 1rem;
+        margin: 1rem 2rem;
     }
 }
 
