@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram } from 'react-icons/fa6'
+import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaTiktok } from 'react-icons/fa6'
 
 function Footer() {
   return (
@@ -27,10 +27,12 @@ function Footer() {
                 <li>Email: <a href="mailto:israellogan@gmail.com">israellogan@gmail.com</a></li>
                 <li>Phone: <a href="tel:+2347048460309">+2347048460309</a></li>
                 <ul className='footer-socials'>
-                    <li><a href=''><FaXTwitter/></a></li>
-                    <li><a href='www.linkedin.com/in/israel-akpoyovware-239351246'><FaLinkedin/></a></li>
-                    <li><a href='https://wa.me/+2347048460309'><FaWhatsapp/></a></li>
-                    <li><a href='https://www.instagram.com/king_israel6/'><FaInstagram/></a></li>
+                  <li><a href='https://x.com/king_israel6'><FaXTwitter/></a></li>
+                  <li><a href='www.linkedin.com/in/israel-akpoyovware-239351246'><FaLinkedin/></a></li>
+                  <li><a href='https://wa.me/+2347048460309'><FaWhatsapp/></a></li>
+                  <li><a href='https://www.instagram.com/king_israel6/'><FaInstagram/></a></li>
+                  <li><a href="https://github.com/king-israel3"><FaGithub/></a></li>
+                  <li><a href='https://www.tiktok.com/@king_israel6'><FaTiktok/></a></li>
                 </ul>
             </ul>
         </div>

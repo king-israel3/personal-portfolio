@@ -10,6 +10,7 @@ function About() {
           <div className="image-wrapper">
             <div className="shape shape-blue"></div>
             <div className="shape shape-red"></div>
+            <div className="shape shape-white"></div>
             <img src={me} alt="About Me" className="about-img" />
           </div>
         </div>
