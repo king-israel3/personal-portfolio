@@ -8,10 +8,10 @@ function Header() {
     
   return (
     <section className='header'>
-      <div className='logo'>
+      <div className='logo' data-aos="fade-right">
         <a href='/'>Logo</a>
       </div>
-      <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
+      <nav className={`nav-links ${isOpen ? 'open' : ''}`} data-aos="fade-left">
         <ul>
           {/*  */}
           <li><a href='#about' onClick={showNavBar}>About</a></li>
@@ -20,7 +20,7 @@ function Header() {
           <li><a href='#footer' onClick={showNavBar}>Contact</a></li>
         </ul> 
       </nav>
-      <div className='menu-container' onClick={showNavBar}>
+      <div className='menu-container' onClick={showNavBar} data-aos="fade-down">
         {isOpen ? <FaTimes className='menu-icon'/> : <FaBars className='menu-icon'/>}
       </div>
     </section>

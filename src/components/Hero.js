@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <section className='hero'>
+    <section className='hero' data-aos="fade-up">
       <main className='intro'>
         <h1>Hi, I'm Israel</h1>
         <h2>A Full-Stack MERN Developer</h2>

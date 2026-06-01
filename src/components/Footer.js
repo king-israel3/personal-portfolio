@@ -5,13 +5,13 @@ function Footer() {
   return (
     <section className='footer' id='footer'>
       <main className="footer-links">
-        <div>
+        <div data-aos="fade-right">
           <h3>Akpoyovware Ovie Israel</h3>
           <p>Full-Stack MERN Developer</p>
           <p>Delta, Nigeria</p>
         </div>
 
-        <div>
+        <div data-aos="fade-down">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#projects">Projects</a></li>
@@ -21,7 +21,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div data-aos="fade-left">
           <h4>Contact & Socials</h4>
           <ul>
             <li>Email: <a href="mailto:israellogan54@gmail.com">israellogan54@gmail.com</a></li>
@@ -40,7 +40,7 @@ function Footer() {
         </div>
       </main>
 
-      <main className="footer-bottom">
+      <main className="footer-bottom" data-aos="fade-up">
         <p>&copy; April 2025 Akpoyovware Ovie Israel. All rights reserved.</p>
         <p>Designed by <b><a href='/'>Akpoyovware Ovie Israel</a></b></p>
       </main>
