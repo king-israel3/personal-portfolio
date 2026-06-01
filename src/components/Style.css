@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body, .home {
+    overflow-x: hidden;
+}
+
 html { scroll-behavior: smooth; overflow-x: hidden; } 
 
 .home { background: #0a192f; }
@@ -30,7 +34,7 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     background: linear-gradient(90deg, #4169e1, #1c2a5e);
     position: fixed;
     z-index: 100;
@@ -44,13 +48,13 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 .nav-links ul li { 
     display: inline; 
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .menu-container { display: none; }
 
 @media(max-width: 600px){
-    .header{ padding: 1rem 2rem; }
+    .header{ padding: 0.75rem 1rem; }
 
     .menu-container {
         display: block;
@@ -370,7 +374,6 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 @media screen and (max-width: 600px) {
     .about, .projects { margin: 0 2rem; }
 }
-
 
 /* skills */
 .skillsets {

@@ -40,7 +40,7 @@ function Footer() {
         </div>
       </main>
 
-      <main className="footer-bottom" data-aos="fade-up">
+      <main className="footer-bottom">
         <p>&copy; April 2025 Akpoyovware Ovie Israel. All rights reserved.</p>
         <p>Designed by <b><a href='/'>Akpoyovware Ovie Israel</a></b></p>
       </main>
