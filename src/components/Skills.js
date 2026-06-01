@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaHtml5, FaCss3Alt, FaGithub, FaReact, FaNodeJs, FaJs } from 'react-icons/fa';
 
 const skillSets = [
@@ -27,9 +27,10 @@ const skillSets = [
         skillIcon: (<><FaReact className='react'/></>)
     },
     { 
-        skillName: "Node JS", 
-        skillLevel: 30,
-        skillText: "I have a basic understanding of Node.js and have used it to set up simple backend logic, route handling, and servers. While I'm still in the early stages, I'm eager to deepen my knowledge of backend development.",
+        skillName: "Node.js", 
+        skillLevel: 55,
+        skillText: "I use Node.js for backend logic, route handling, and servers. I build CRUD APIs for user auth, profile edits, comment systems with a like feature, search function and a payment gateway for e-commerce websites.",
+        // search function that returns relevant results
         skillIcon: (<><FaNodeJs className='node'/></>)
     },
     { 
@@ -41,26 +42,69 @@ const skillSets = [
 ]
 
 function Skills() {
+    const barRef = useRef(null)
+
+    const [isVisible, setIsVisible] = useState(false);
+    const [skillCounts, setSkillCounts] = useState(skillSets.map(() => 0)); // Initialize count for each skill
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            entries => {
+                if (entries[0].isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect(); // run once
+                }
+            },
+            { threshold: 0.3 } // triggers when 30% visible
+        );
+        if (barRef.current) observer.observe(barRef.current);
+        return () => observer.disconnect();
+    }, []);
+
+    // Animate number count for each skill
+    useEffect(() => {
+        if (isVisible) {
+            const timers = skillSets.map((skill, index) => {
+                const duration = 1500; // 1.5s total
+                const increment = skill.skillLevel / (duration / 30);
+                const counter = setInterval(() => {
+                    setSkillCounts(prevCounts => {
+                        const newCounts = [...prevCounts];
+                        if (newCounts[index] + increment >= skill.skillLevel) {
+                            clearInterval(counter);
+                            newCounts[index] = skill.skillLevel;
+                        } else {
+                            newCounts[index] += increment;
+                        }
+                        return newCounts;
+                    });
+                }, 30);
+                return counter;
+            });
+
+            return () => timers.forEach(timer => clearInterval(timer));
+        }
+    }, [isVisible]);
   return (
     <section id='skills' className='skills'>
-        <h2 className='heading-text'>My <span>Skills</span></h2>
-        <main className='skillsets'>
-    {skillSets.map((skill, index) => (
-        <div key={index} className='skillset'>
-            <div className='skill-name-icon-level'>
-                <p className='skill-name-icon'>
-                    <span>{skill.skillName}</span>
-                    <span>{skill.skillIcon}</span>
-                </p>
-                <p>{skill.skillLevel}%</p>
-            </div>
-            <p className='skill-text'>{skill.skillText}</p>
-            <div className='skill-progress'>
-                <div className='skill-progressbar' style={{ width: `${skill.skillLevel}%` }}></div>
-            </div>
-        </div>
-    ))}
-</main>
+        <h2 className='heading-text'>My Skills</h2>
+        <main className='skillsets' ref={barRef}>
+            {skillSets.map((skill, index) => (
+                <div key={index} className='skillset'>
+                    <div className='skill-name-icon-level'>
+                        <p className='skill-name-icon'>
+                            <span>{skill.skillName}</span>
+                            <span>{skill.skillIcon}</span>
+                        </p>
+                        <p>{Math.round(skillCounts[index])}%</p>
+                    </div>
+                    <p className='skill-text'>{skill.skillText}</p>
+                    <div className='skill-progress'>
+                        <div className='skill-progressbar' style={{ width: isVisible ? `${skill.skillLevel}%` : '0%', transition: 'width 1.5s ease-in-out' }}></div>
+                    </div>
+                </div>
+            ))}
+        </main>
     </section>
   )
 }

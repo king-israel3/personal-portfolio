@@ -4,12 +4,13 @@ import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
 import Skills from './Skills'
-// import Testimonials from './Testimonials'
+import Header from './Header'
 import Footer from './Footer'
 
 function Home(){
     return(
-        <section>
+        <section className='home'>
+            <Header/>
             <Hero/>
             <About/>
             <Projects/>
