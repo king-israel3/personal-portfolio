@@ -9,7 +9,7 @@ function Header() {
   return (
     <section className='header'>
       <div className='logo'>
-        <a href=''>Logo</a>
+        <a href='#'>Logo</a>
       </div>
       <nav className={`nav-links ${isOpen ? 'open' : ''}`}>
         <ul>

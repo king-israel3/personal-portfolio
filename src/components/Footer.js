@@ -17,7 +17,7 @@ function Footer() {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About Me</a></li>
             {/* <li><a href="#projects">Projects</a></li> */}
-            <li><a href="/My_CV.docx" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            {/* <li><a href="/My_CV.docx" target="_blank" rel="noopener noreferrer">Resume</a></li> */}
           </ul>
         </div>
 
@@ -33,7 +33,7 @@ function Footer() {
               <li><a href='https://www.instagram.com/king_israel6/'><FaInstagram/></a></li>
               <li><a href="https://github.com/king-israel3"><FaGithub/></a></li>
               <li><a href='https://www.tiktok.com/@king_israel6'><FaTiktok/></a></li>
-              <li><a href=''><FaYoutube/></a></li>
+              {/* <li><a href=''><FaYoutube/></a></li> */}
               <li><a href='https://www.facebook.com/profile.php?id=100091692905982'><FaFacebook/></a></li>
             </ul>
           </ul>

@@ -27,7 +27,7 @@ function Projects() {
       
       <main className='all-projects-grids'>
         <div className='project-card'>
-          <img src={quizWebsiteGlimpse}/>
+          <img src={quizWebsiteGlimpse} alt='quiz-website'/>
           <div className='project-details'>
             <h2>Quiz Website</h2>
             <p>A full-stack quiz website where you partake in questions & answers. You can also view your history & compete with other users to climb up the leaderboard</p>
@@ -41,7 +41,7 @@ function Projects() {
           </div>
         </div>
         <div className='project-card'>
-          <img src={twitterVideoDownloaderProject}/>
+          <img src={twitterVideoDownloaderProject} alt='twitter-video-downloader-website'/>
           <div className='project-details'>
             <h2>Twitter video downloader Website</h2>
             <p>A full-stack website to download X (Twitter) videos, with captions. Fast, free, and secure — no login or app required</p>
@@ -55,7 +55,7 @@ function Projects() {
           </div>
         </div>
         <div className='project-card'>
-          <img src={realEstateWebsiteProjectDesktop}/>
+          <img src={realEstateWebsiteProjectDesktop} alt='real-estate-website'/>
           <div className='project-details'>
             <h2>Real Estate Website</h2>
             <p>A frontend-only website that shows the available houses, both for sale and rent, with dynamic routing and pagination</p>
@@ -66,7 +66,7 @@ function Projects() {
           </div>
         </div>
         <div className='project-card'>
-          <img src={telegramBotDashboardProject}/>
+          <img src={telegramBotDashboardProject} alt='telegram-bot-dashboard-website'/>
           <div className='project-details'>
             <h2>Telegram Bot + Dashboard</h2>
             <p>A Telegram moderation bot featuring user verification, scheduled messaging, activity logging, and a web-based admin dashboard.</p>
@@ -84,7 +84,7 @@ function Projects() {
           </div>
         </div>
         <div className='project-card'>
-          <img src={comingSoon}/>
+          <img src={comingSoon} alt='coming-soon'/>
           <div className='project-details'>
             <h2>Something nice is coming</h2>
             <p>Anticipate!</p>

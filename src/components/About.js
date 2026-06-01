@@ -1,5 +1,4 @@
 import React from 'react'
-import me from '../assets/me.png'
 import portfolioImg from '../assets/me/portfolio-img.jpg'
 
 function About() {
@@ -8,7 +7,7 @@ function About() {
       <h2 className='heading-text'>About <span>Me</span></h2>
       <main className='about-details'>
         <div>
-          <img src={portfolioImg} className="about-img"/>
+          <img src={portfolioImg} className="about-img" alt="Israel - Full Stack MERN Developer"/>
         </div>
         <div className='about-details-text'>
           <p>I'm a full-stack web developer from Nigeria with a strong foundation in frontend development and growing experience in backend technologies. I enjoy turning ideas into sleek, mobile-responsive web applications using MongoDB, Express, React, Node.js, and CSS</p>
