@@ -1,10 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FaPlay } from 'react-icons/fa';
+// import { FaPlay } from 'react-icons/fa';
 
 import realEstateWebsiteProjectDesktop from "../assets/my-works/real-estate-website.jpg"
-import musicWebsiteProjectDesktop from "../assets/my-works/music-website.png"
-import restaurantWebsiteProjectDesktop from "../assets/my-works/restaurant-website2.png"
 
 import comingSoon from "../assets/my-works-mockup/coming-soon-background-illustration-template-design-free-vector1.jpg"
 import telegramBotDashboardProject from "../assets/my-works-mockup/telegram-bot/projects-mockup.jpg"
@@ -12,7 +10,7 @@ import twitterVideoDownloaderProject from "../assets/my-works-mockup/twitter-vid
 import quizWebsiteGlimpse from "../assets/my-works-mockup/quiz-website/Screenshot(1979).png"
 
 function Projects() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return (
     <section className='projects' id='projects'>
       <h2 className='heading-text'>My Works</h2>

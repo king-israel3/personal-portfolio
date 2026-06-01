@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaTiktok, FaYoutube, FaFacebook } from 'react-icons/fa6'
+import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaTiktok, FaFacebook } from 'react-icons/fa6'
 
 function Footer() {
   return (
