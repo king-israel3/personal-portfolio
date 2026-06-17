@@ -7,7 +7,7 @@ import realEstateWebsiteProjectDesktop from "../assets/my-works/real-estate-webs
 import comingSoon from "../assets/my-works-mockup/coming-soon-background-illustration-template-design-free-vector1.jpg"
 import telegramBotDashboardProject from "../assets/my-works-mockup/telegram-bot/projects-mockup.jpg"
 import twitterVideoDownloaderProject from "../assets/my-works-mockup/twitter-video-downloader/projects-mockup.jpg"
-import quizWebsiteGlimpse from "../assets/my-works-mockup/quiz-website/Screenshot(1979).png"
+import quizWebsiteProject from "../assets/my-works-mockup/quiz-website/projects-mockup(use).jpg"
 
 function Projects() {
   // const navigate = useNavigate()
@@ -25,7 +25,7 @@ function Projects() {
       
       <main className='all-projects-grids'>
         <div className='project-card' data-aos="fade-right" data-aos-delay="100">
-          <img src={quizWebsiteGlimpse} alt='quiz-website'/>
+          <img src={quizWebsiteProject} alt='quiz-website'/>
           <div className='project-details'>
             <h2>Quiz Website</h2>
             <p>A full-stack quiz website where you partake in questions & answers. You can also view your history & compete with other users to climb up the leaderboard</p>
@@ -61,6 +61,7 @@ function Projects() {
               <span className='used-langs'>React</span>
               <span className='used-langs'>CSS</span>
             </div>
+            <button className="cta-button" onClick={()=>window.open("https://www.linkedin.com/posts/israel-akpoyovware-239351246_spedupvideo-realestatewebsite-webdesign-ugcPost-7334373084302401536-h7_Z/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADzrYQ0BsLKQZaPSJnYbIVCbwP_vKpxv6tg", "_blank")}>Watch video walkthrough</button>
           </div>
         </div>
         <div className='project-card' data-aos="fade-right" data-aos-delay="100">

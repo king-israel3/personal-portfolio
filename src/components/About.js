@@ -16,7 +16,7 @@ function About() {
 
           <p>I value clean, reusable code and user-focused design. Outside of coding, I enjoy exploring UI trends, watching movies, playing video games, and keeping up with football and tech content.</p>
 
-          {/* <a href="/My_CV.docx" className="cta-button" download>📄 Download My resume (Word)</a> */}
+          <a href="/My-CV.pdf" className="cta-button" download>📄 Download My resume (Word)</a>
         </div>
       </main>
     </section>

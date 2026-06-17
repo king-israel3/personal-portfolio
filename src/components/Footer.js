@@ -1,14 +1,14 @@
 import React from 'react'
-import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaTiktok, FaFacebook } from 'react-icons/fa6'
+import { FaXTwitter, FaLinkedin, FaWhatsapp, FaInstagram, FaGithub, FaTiktok, FaFacebook, FaYoutube } from 'react-icons/fa6'
 
 function Footer() {
   return (
     <section className='footer' id='footer'>
       <main className="footer-links">
         <div data-aos="fade-right">
-          <h3>Akpoyovware Ovie Israel</h3>
+          <h3>Israel Ovie Akpoyovware</h3>
           <p>Full-Stack MERN Developer</p>
-          <p>Delta, Nigeria</p>
+          <p>Delta State, Nigeria.</p>
         </div>
 
         <div data-aos="fade-down">
@@ -17,7 +17,7 @@ function Footer() {
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About Me</a></li>
             {/* <li><a href="#projects">Projects</a></li> */}
-            {/* <li><a href="/My_CV.docx" target="_blank" rel="noopener noreferrer">Resume</a></li> */}
+            <li><a href="/My-CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
           </ul>
         </div>
 
@@ -33,7 +33,7 @@ function Footer() {
               <li><a href='https://www.instagram.com/king_israel6/'><FaInstagram/></a></li>
               <li><a href="https://github.com/king-israel3"><FaGithub/></a></li>
               <li><a href='https://www.tiktok.com/@king_israel6'><FaTiktok/></a></li>
-              {/* <li><a href=''><FaYoutube/></a></li> */}
+              <li><a href='http://www.youtube.com/@king_israel6'><FaYoutube/></a></li>
               <li><a href='https://www.facebook.com/profile.php?id=100091692905982'><FaFacebook/></a></li>
             </ul>
           </ul>
@@ -41,8 +41,8 @@ function Footer() {
       </main>
 
       <main className="footer-bottom">
-        <p>&copy; April 2025 Akpoyovware Ovie Israel. All rights reserved.</p>
-        <p>Designed by <b><a href='/'>Akpoyovware Ovie Israel</a></b></p>
+        <p>&copy; April 2025 Israel Ovie Akpoyovware. All rights reserved.</p>
+        <p>Designed by <b><a href='/'>Israel Ovie Akpoyovware</a></b></p>
       </main>
     </section>
   )
