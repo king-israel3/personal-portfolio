@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaCode, FaTimes } from 'react-icons/fa'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,7 +21,7 @@ function Header() {
         </ul> 
       </nav>
       <div className='menu-container' onClick={showNavBar}>
-        {isOpen ? <FaTimes className='menu-icon'/> : <FaBars className='menu-icon'/>}
+        {isOpen ? <FaTimes className='menu-icon'/> : <FaCode className='menu-icon'/>}
       </div>
     </section>
   )

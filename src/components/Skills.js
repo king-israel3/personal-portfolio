@@ -19,18 +19,18 @@ const skillSets = [
     },
     { 
         skillName: "React",
-        skillText: "I'm actively developing my skills in React. I currently build components using hooks and props, manage basic state, and structure projects using reusable logic and clean JSX. I'm growing steadily in this area with each new project.",
+        skillText: "I build responsive user interfaces with React using reusable components, hooks, props, state management, and client-side routing. I focus on creating clean, maintainable code and interactive user experiences while continuously expanding my knowledge of the React ecosystem.",
         skillIcon: (<><FaReact className='react'/></>)
     },
     { 
         skillName: "Node.js",
-        skillText: "I use Node.js for backend logic, route handling, and servers. I build CRUD APIs for user auth, profile edits, comment systems with a like feature, search function and a payment gateway for e-commerce websites.",
+        skillText: "I use Node.js and Express to build backend services, RESTful APIs, and authentication systems. My experience includes user registration and login, profile management, comment systems, search functionality, OTP verification, payment integration, and database-driven applications using MongoDB and PostgreSQL.",
         // search function that returns relevant results
         skillIcon: (<><FaNodeJs className='node'/></>)
     },
     { 
         skillName: "GitHub",
-        skillText: "While I've used GitHub for version control and hosting projects in the past, it's an area I'm revisiting. I'm familiar with basic commands and collaboration workflows, and I'm working on making Git a more active part of my dev process.",
+        skillText: "I use GitHub for version control, project management, and code hosting. I'm comfortable with essential Git workflows such as cloning repositories, creating commits, managing branches, resolving merge conflicts, and collaborating on projects while continuously improving my version control practices.",
         skillIcon: (<><FaGithub className='github'/></>)
     }
 ]
