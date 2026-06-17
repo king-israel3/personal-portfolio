@@ -28,7 +28,7 @@ function Footer() {
             <li>Phone: <a href="tel:+2347048460309">+2347048460309</a></li>
             <ul className='footer-socials'>
               <li><a href='https://x.com/king_israel6'><FaXTwitter/></a></li>
-              <li><a href='www.linkedin.com/in/israel-akpoyovware-239351246'><FaLinkedin/></a></li>
+              <li><a href='https://www.linkedin.com/in/israel-akpoyovware-239351246/'><FaLinkedin/></a></li>
               <li><a href='https://wa.me/+2347048460309'><FaWhatsapp/></a></li>
               <li><a href='https://www.instagram.com/king_israel6/'><FaInstagram/></a></li>
               <li><a href="https://github.com/king-israel3"><FaGithub/></a></li>

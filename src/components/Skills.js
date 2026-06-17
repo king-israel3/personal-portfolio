@@ -33,6 +33,7 @@ const skillSets = [
         skillText: "I use GitHub for version control, project management, and code hosting. I'm comfortable with essential Git workflows such as cloning repositories, creating commits, managing branches, resolving merge conflicts, and collaborating on projects while continuously improving my version control practices.",
         skillIcon: (<><FaGithub className='github'/></>)
     }
+    // other skills to add later: redis, pgAdmin 4, postgreSQL
 ]
 
 function Skills() {
